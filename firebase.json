@@ -7,12 +7,12 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "dist",
+    "public": "dist/custom-webpage-builder",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
-        "destination": "/custom-webpage-builder/index.html"
+        "destination": "/index.html"
       }
     ]
   }
