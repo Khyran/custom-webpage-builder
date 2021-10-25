@@ -1,0 +1,15 @@
+<mat-drawer-container class="sidenav">
+  <mat-drawer mode="side" class="drawer" opened
+    ><ng-container *ngFor="let sideNavElement of sideNavElements.elements">
+      <ng-container *ngIf="sideNavElement.text">
+        <app-side-nav-item [sideNavItems]="sideNavElement"> </app-side-nav-item>
+      </ng-container>
+      <ng-container *ngIf="sideNavElement.title">
+        <app-side-nav-expension
+          [sideNavExpandable]="sideNavElement"
+        ></app-side-nav-expension>
+      </ng-container>
+    </ng-container>
+  </mat-drawer>
+  <mat-drawer-content><ng-content></ng-content></mat-drawer-content>
+</mat-drawer-container>

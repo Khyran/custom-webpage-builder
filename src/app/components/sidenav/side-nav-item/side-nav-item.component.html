@@ -1,0 +1,5 @@
+<mat-list>
+  <ng-container *ngFor="let item of sideNavItems">
+    <mat-list-item routerLink="item.url"> {{ item.text }} </mat-list-item>
+  </ng-container>
+</mat-list>

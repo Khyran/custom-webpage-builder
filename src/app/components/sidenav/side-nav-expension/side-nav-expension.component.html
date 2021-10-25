@@ -1,0 +1,9 @@
+<mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ sideNavExpandable.title }}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <app-side-nav-item [sideNavItems]="sideNavExpandable.sideNavItems">
+  </app-side-nav-item>
+</mat-expansion-panel>
